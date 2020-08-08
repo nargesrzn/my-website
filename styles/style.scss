@@ -14,6 +14,7 @@ $yellow: rgb(221, 160, 50);
   box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
   scroll-behavior: smooth;
+  max-width: 100%;
 }
 html {
   font-size: 16px;
@@ -121,15 +122,15 @@ header {
     line-height: 2rem;
   }
   .learning::before {
-    content: url(./img/knowledge.svg);
+    content: url(../img/knowledge.svg);
     padding-right: 1em;
   }
   .movies::before {
-    content: url(./img/cinema.svg);
+    content: url(../img/cinema.svg);
     padding-right: 1em;
   }
   .art::before {
-    content: url(./img/artist.svg);
+    content: url(../img/artist.svg);
     padding-right: 1em;
   }
   .lang {

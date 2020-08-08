@@ -6,6 +6,7 @@
           box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
   scroll-behavior: smooth;
+  max-width: 100%;
 }
 
 html {
@@ -160,17 +161,17 @@ header .job-title {
 }
 
 .passions-section .learning::before {
-  content: url(./img/knowledge.svg);
+  content: url(../img/knowledge.svg);
   padding-right: 1em;
 }
 
 .passions-section .movies::before {
-  content: url(./img/cinema.svg);
+  content: url(../img/cinema.svg);
   padding-right: 1em;
 }
 
 .passions-section .art::before {
-  content: url(./img/artist.svg);
+  content: url(../img/artist.svg);
   padding-right: 1em;
 }
 
