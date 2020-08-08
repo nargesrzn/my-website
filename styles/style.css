@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #353537;
+  width: 100%;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+nav {
+  text-align: center;
+  padding: 1.5em 0;
+  background-color: #584b4f;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+nav a {
+  color: #ded8d1;
+  margin: 0 1em;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15em 0 8em 0;
+}
+
+header .greet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 3rem;
+  color: #78af9f;
+}
+
+header .job-title {
+  font-size: 4rem;
+  font-weight: 700;
+  padding-top: 0.4em;
+  line-height: 1.5em;
+  color: #dda032;
+}
+
+#down {
+  width: 3rem;
+  position: relative;
+  left: 47%;
+}
+
+.skills-section {
+  color: #ded8d1;
+  padding: 8em 0;
+}
+
+.skills-section h1 {
+  padding-bottom: 1em;
+}
+
+.skills-section h3 {
+  padding-bottom: 0.8em;
+  color: #78af9f;
+}
+
+.skills-section .skills-wrapper {
+  width: 50%;
+  margin: auto;
+}
+
+.skills-section .main-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills-section .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  line-height: 2rem;
+}
+
+.skills-section .row p + p {
+  margin-left: 3em;
+}
+
+.skills-section .row p {
+  border-bottom: 1px solid #dda032;
+}
+
+.passions-section {
+  color: #ded8d1;
+  padding: 8em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.passions-section h1 {
+  padding-bottom: 1em;
+}
+
+.passions-section p {
+  line-height: 2rem;
+}
+
+.passions-section .learning::before {
+  content: url(/img/knowledge.svg);
+  padding-right: 1em;
+}
+
+.passions-section .movies::before {
+  content: url(/img/cinema.svg);
+  padding-right: 1em;
+}
+
+.passions-section .art::before {
+  content: url(/img/artist.svg);
+  padding-right: 1em;
+}
+
+.passions-section .lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.passions-section .progress {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0.4rem;
+  width: 250px;
+  margin-left: 2em;
+}
+
+.passions-section .progress-value {
+  border-radius: 100px;
+  background: #dda032;
+  height: 0.4rem;
+  width: 0;
+}
+
+.passions-section .value100 {
+  -webkit-animation: load100 3s normal forwards;
+          animation: load100 3s normal forwards;
+}
+
+.passions-section .value80 {
+  -webkit-animation: load80 3s normal forwards;
+          animation: load80 3s normal forwards;
+}
+
+.passions-section .value10 {
+  -webkit-animation: load10 3s normal forwards;
+          animation: load10 3s normal forwards;
+}
+
+@-webkit-keyframes load100 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes load100 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes load80 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes load80 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes load10 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 10%;
+  }
+}
+
+@keyframes load10 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 10%;
+  }
+}
+
+footer {
+  font-size: 0.8rem;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  background-color: #ded8d1;
+  color: #584b4f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3em 20em;
+  line-height: 3rem;
+}
+
+footer .email .e-address::before {
+  content: url(/img/email.svg);
+  padding-right: 1em;
+  position: relative;
+  top: 5px;
+}
+
+footer .social-media a + a {
+  margin-left: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    width: 75%;
+    padding: 10em 0 6em 0;
+  }
+  header .greet {
+    font-size: 2rem;
+  }
+  header .job-title {
+    font-size: 3rem;
+  }
+  .skills-section {
+    padding: 4em 0;
+  }
+  .skills-section .skills-wrapper {
+    width: 75%;
+  }
+  .skills-section .main-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills-section .main-row .column {
+    margin-top: 2em;
+  }
+  .passions-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 75%;
+  }
+  .passions-section .languages-wrapper {
+    margin-top: 2em;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 3em 0;
+  }
+  footer div + div {
+    margin-top: 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
