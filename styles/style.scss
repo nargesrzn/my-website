@@ -20,7 +20,8 @@ html {
 }
 body {
   background-color: $background;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
 }
 a,
 a:active,
@@ -120,15 +121,15 @@ header {
     line-height: 2rem;
   }
   .learning::before {
-    content: url(/img/knowledge.svg);
+    content: url(./img/knowledge.svg);
     padding-right: 1em;
   }
   .movies::before {
-    content: url(/img/cinema.svg);
+    content: url(./img/cinema.svg);
     padding-right: 1em;
   }
   .art::before {
-    content: url(/img/artist.svg);
+    content: url(./img/artist.svg);
     padding-right: 1em;
   }
   .lang {
@@ -205,7 +206,7 @@ footer {
   line-height: 3rem;
   .email {
     .e-address::before {
-      content: url(/img/email.svg);
+      content: url(./img/email.svg);
       padding-right: 1em;
       position: relative;
       top: 5px;
