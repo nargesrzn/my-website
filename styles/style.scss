@@ -14,7 +14,6 @@ $yellow: rgb(221, 160, 50);
   box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 html {
   font-size: 16px;
@@ -75,6 +74,8 @@ header {
 }
 //skills section
 .skills-section {
+  display: flex;
+  flex-direction: column;
   color: $on-navbar;
   padding: 8em 0;
   h1 {
